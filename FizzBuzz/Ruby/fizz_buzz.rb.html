@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>fizz_buzz.rb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+fizz_buzz.rb</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">class </span><span class="s1">FizzBuzz 
+  </span><span class="s2"># To change this template use File | Settings | File Templates.</span><span class="s1"> 
+  </span><span class="s0">def </span><span class="s1">initialize() 
+ 
+  </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">def </span><span class="s1">isFizz(number) 
+    </span><span class="s0">if </span><span class="s1">(number % </span><span class="s3">3 </span><span class="s1">== </span><span class="s3">0 </span><span class="s1">) 
+      </span><span class="s0">return true</span><span class="s1">; 
+    </span><span class="s0">else</span><span class="s1"> 
+      </span><span class="s0">return false</span><span class="s1">; 
+    </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">def </span><span class="s1">isBuzz(number) 
+    </span><span class="s0">if </span><span class="s1">(number % </span><span class="s3">5 </span><span class="s1">== </span><span class="s3">0 </span><span class="s1">) 
+      </span><span class="s0">return true</span><span class="s1">; 
+    </span><span class="s0">else</span><span class="s1"> 
+      </span><span class="s0">return false</span><span class="s1">; 
+    </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">def </span><span class="s1">isFizzBuzz(number) 
+    </span><span class="s0">if </span><span class="s1">(isFizz(number) &amp;&amp; isBuzz(number)) 
+      </span><span class="s0">return </span><span class="s4">&quot;IS FIZZBUZZ&quot;</span><span class="s1">; 
+    </span><span class="s0">elsif </span><span class="s1">(isFizz(number)) 
+      </span><span class="s0">return </span><span class="s4">&quot;IS FIZZ&quot;</span><span class="s1">; 
+    </span><span class="s0">elsif </span><span class="s1">(isBuzz(number)) 
+       </span><span class="s0">return </span><span class="s4">&quot;IS BUZZ&quot;</span><span class="s1">; 
+    </span><span class="s0">else</span><span class="s1"> 
+        </span><span class="s0">return </span><span class="s4">&quot;NO FIZZ NO BUZZ&quot;</span><span class="s1">; 
+    </span><span class="s0">end</span><span class="s1"> 
+  </span><span class="s0">end</span><span class="s1"> 
+ 
+</span><span class="s0">end</span><span class="s1"> 
+ 
+fb= FizzBuzz.new(); 
+puts(fb.isFizzBuzz(</span><span class="s3">5</span><span class="s1">)); 
+</span></pre>
+</body>
+</html>
